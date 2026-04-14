@@ -4,6 +4,14 @@ html {
     font-family: sans-serif
 }
 
+/* Deshabilitar la selección de texto en todo el sitio */
+body {
+    user-select: none;         /* Bloquea la selección de texto */
+    -webkit-user-select: none; /* Para Safari (opcional, pero ya no es necesario) */
+    -moz-user-select: none;    /* Para Firefox */
+    -ms-user-select: none;     /* Para IE/Edge */
+}
+
 body {
     margin: 0
 }

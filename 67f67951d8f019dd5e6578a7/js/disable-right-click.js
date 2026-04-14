@@ -5,7 +5,9 @@ document.addEventListener("contextmenu", function(event) {
 
 // Deshabilitar la selección de texto en el sitio
 document.body.style.userSelect = "none";
-document.body.style.webkitUserSelect = "none"; // Para Webkit (Chrome, Safari)
+document.body.style.webkitUserSelect = "none";  // Para Webkit (Chrome, Safari)
+document.body.style.mozUserSelect = "none";    // Para Firefox
+document.body.style.msUserSelect = "none";     // Para IE/Edge
 
 // Deshabilitar el arrastre de imágenes
 document.querySelectorAll("img").forEach(function(img) {
