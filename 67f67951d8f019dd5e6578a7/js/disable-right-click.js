@@ -55,3 +55,50 @@ console.log('%c', devtools);
 Object.defineProperty(console, 'log', { value: function() {} });
 Object.defineProperty(console, 'warn', { value: function() {} });
 Object.defineProperty(console, 'error', { value: function() {} });
+
+document.addEventListener("keydown", function(e) {
+    // Bloquear Ctrl + A (Seleccionar todo)
+    if (e.ctrlKey && e.key === 'a') {
+        e.preventDefault();
+    }
+
+    // Bloquear Ctrl + C (Copiar)
+    if (e.ctrlKey && e.key === 'c') {
+        e.preventDefault();
+    }
+
+    // Bloquear Ctrl + V (Pegar)
+    if (e.ctrlKey && e.key === 'v') {
+        e.preventDefault();
+    }
+
+    // Bloquear Ctrl + X (Cortar)
+    if (e.ctrlKey && e.key === 'x') {
+        e.preventDefault();
+    }
+
+    // Bloquear Ctrl + S (Guardar)
+    if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+    }
+
+    // Bloquear Ctrl + U (Ver código fuente)
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+    }
+
+    // Bloquear Ctrl + Shift + I (Abrir las herramientas de desarrollo)
+    if (e.ctrlKey && e.shiftKey && e.key === 'i') {
+        e.preventDefault();
+    }
+
+    // Bloquear Ctrl + Shift + J (Abrir la consola)
+    if (e.ctrlKey && e.shiftKey && e.key === 'j') {
+        e.preventDefault();
+    }
+
+    // Bloquear F12 (Abrir herramientas de desarrollo)
+    if (e.key === 'F12') {
+        e.preventDefault();
+    }
+});
