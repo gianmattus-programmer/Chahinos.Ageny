@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Cuerpo de Bomberos - Chahinos Agency</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
+        <script src="/webfont.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            WebFont.load({
+                google: {
+                    families: ["IBM Plex Mono:regular", "Roboto:regular,700"]
+                }
+            });
+        </script>
+        <script type="text/javascript">
+            !function(o, c) {
+                var n = c.documentElement
+                  , t = " w-mod-";
+                n.className += t + "js",
+                ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+            }(window, document);
+        </script>
+        <link href="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763021807/logo_e2jdkd.svg" rel="shortcut icon" type="image/x-icon"/>
+        <link href="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763021807/logo_e2jdkd.svg" rel="apple-touch-icon"/>
+        <style>
+            .anti-flicker, .anti-flicker * {
+                visibility: hidden !important;
+                opacity: 0 !important;
+            }
+        </style>
+        <style>
+            [data-wf-hidden-variation], [data-wf-hidden-variation] * {
+                display: none !important;
+            }
+        </style>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VKP6YN4P74"></script>
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('set', 'developer_id.dZGVlNj', true);
+            gtag('config', 'G-VKP6YN4P74');
+        </script>
+        <script>
+            !function(t, e) {
+                var o, n, p, r;
+                e.__SV || (window.posthog && window.posthog.__loaded) || (window.posthog = e,
+                e._i = [],
+                e.init = function(i, s, a) {
+                    function g(t, e) {
+                        var o = e.split(".");
+                        2 == o.length && (t = t[o[0]],
+                        e = o[1]),
+                        t[e] = function() {
+                            t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                        }
+                    }
+                    (p = t.createElement("script")).type = "text/javascript",
+                    p.crossOrigin = "anonymous",
+                    p.async = !0,
+                    p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js",
+                    (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+                    var u = e;
+                    for (void 0 !== a ? u = e[a] = [] : a = "posthog",
+                    u.people = u.people || [],
+                    u.toString = function(t) {
+                        var e = "posthog";
+                        return "posthog" !== a && (e += "." + a),
+                        t || (e += " (stub)"),
+                        e
+                    }
+                    ,
+                    u.people.toString = function() {
+                        return u.toString(1) + ".people (stub)"
+                    }
+                    ,
+                    o = "init hi Sr Er ui yr wr capture Ti calculateEventProperties Pr register register_once register_for_session unregister unregister_for_session Cr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Rr kr createPersonProfile Tr Or opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing $r debug L Ir getPageViewId captureTraceFeedback captureTraceMetric".split(" "),
+                    n = 0; n < o.length; n++)
+                        g(u, o[n]);
+                    e._i.push([i, s, a])
+                }
+                ,
+                e.__SV = 1)
+            }(document, window.posthog || []);
+            posthog.init('phc_rcxXIKrxKcnMhhGoGKeJhx6bliV5sOTrreXEwJzg9Tw', {
+                api_host: 'https://eu.i.posthog.com',
+                defaults: '2025-05-24',
+                person_profiles: 'always',
+                // or 'always' to create profiles for anonymous users as well
+            })
+        </script>
+    </head>
+    <body>
+        <c-app class="app is-preloading">
+            <div>
+                <div class="w-embed">
+                    <style>
+                        :root {
+                            --size-unit: 16;
+                            /* body font-size in design - no px */
+                            --size-container-ideal: 1440;
+                            /* screen-size in design - no px */
+                            --size-container-min: 768px;
+                            --size-container-max: 1920px;
+                            --size-container: clamp(var(--size-container-min), 100vw, var(--size-container-max));
+                            --size-font: calc(var(--size-container) / (var(--size-container-ideal) / var(--size-unit)));
+                            --grid-cols: 24;
+                            /* base grid in design */
+                        }
+
+                        @media screen and (min-width: 768px) {
+                            body {
+                                font-size: var(--size-font);
+                            }
+                        }
+
+                        .w-embed svg, .icon-svg svg {
+                            display: block;
+                            width: 100%;
+                            max-width: 100%;
+                            height: auto;
+                        }
+
+                        .wswy_content > *+* {
+                            margin-top: 2rem;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            .is-desk {
+                                display: none!important;
+                            }
+                        }
+
+                        @media screen and (min-width: 768px) {
+                            .is-mobile {
+                                display: none!important;
+                            }
+                        }
+
+                        .kpis-content ul {
+                            padding: 0;
+                            margin: 0;
+                            list-style-type: none;
+                        }
+
+                        .kpis-content ul strong {
+                            font-family: 'Youth';
+                            font-size: 3em;
+                            line-height: 1;
+                            display: block;
+                        }
+
+                        .kpis-content ul li {
+                            padding: 1em 0;
+                            border-top: 1px solid var(--bg-d);
+                        }
+
+                        .is-preloading {
+                            visibility: hidden;
+                        }
+
+                        .wf-design-mode .is-preloading {
+                            visibility: visible!important;
+                        }
+
+                        .sr-only {
+                            border: 0 !important;
+                            clip: rect(1px, 1px, 1px, 1px) !important;
+                            -webkit-clip-path: inset(50%) !important;
+                            clip-path: inset(50%) !important;
+                            height: 1px !important;
+                            overflow: hidden !important;
+                            padding: 0 !important;
+                            position: absolute !important;
+                            width: 1px !important;
+                            white-space: nowrap !important;
+                        }
+
+                        .link-portrait+.link-icon {
+                            margin-left: -1.2em;
+                        }
+
+                        .book_a_call .link-icon, .bento_card .link-icon {
+                            box-shadow: none!important;
+                        }
+
+                        .is-landing .founders_headline {
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        [data-color] {
+                            color: white;
+                            background: var(--base);
+                        }
+                    </style>
+                </div>
+            </div>
+            <c-header id="" class="header">
+                <div class="header_inner">
+                    <nav class="nav">
+                        <a href="/index.html" class="nav_link w-inline-block">
+                            <div class="nav_link_btn_inner">
+                                <div class="nav_link_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 22" fill="none" class="icon">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 0.25C9.12638 0.25 8.35214 0.549479 7.52635 1.04882C6.72657 1.53243 5.81252 2.2459 4.66505 3.14157L3.4817 4.06519C2.10576 5.13845 1.21633 5.83222 0.73262 6.82476C0.249099 7.8169 0.249468 8.9466 0.250039 10.6956L0.250078 13.0278C0.250062 14.8724 0.25005 16.3329 0.403166 17.4758C0.56069 18.6516 0.89249 19.6031 1.64038 20.3536C2.38864 21.1046 3.3378 21.438 4.51071 21.5963C5.65009 21.75 7.10587 21.75 8.94348 21.75H11.0567C12.8943 21.75 14.3501 21.75 15.4895 21.5963C16.6624 21.438 17.6115 21.1046 18.3598 20.3536C19.1077 19.6031 19.4395 18.6516 19.597 17.4758C19.7501 16.3329 19.7501 14.8724 19.7501 13.0278V13.0277L19.7501 10.6956C19.7507 8.9466 19.7511 7.81691 19.2675 6.82476C18.7838 5.83222 17.8944 5.13845 16.5185 4.06519L15.3351 3.14158C14.1876 2.2459 13.2736 1.53243 12.4738 1.04882C11.648 0.549479 10.8738 0.25 10.0001 0.25ZM10 18C11.6569 18 13 16.6569 13 15C13 13.3431 11.6569 12 10 12C8.34315 12 7 13.3431 7 15C7 16.6569 8.34315 18 10 18Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <div class="nav_link_tag">
+                                    <div class="nav_link_tag_title text-youth">Inicio</div>
+                                </div>
+                                <div class="nav_link_dot is-mobile"></div>
+                            </div>
+                        </a>
+                        <a href="/trabajos.html" class="nav_link w-inline-block">
+                            <div class="nav_link_btn_inner">
+                                <div class="nav_link_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 10 12" fill="none" class="icon">
+                                        <path d="M5.90715 3.55815C6.0961 3.46731 6.28532 3.40576 6.5 3.40576C6.71469 3.40576 6.9039 3.46731 7.09285 3.55815C7.27025 3.64344 7.47215 3.76734 7.70956 3.91302L8.2398 4.23837C8.46442 4.37619 8.65559 4.49348 8.80514 4.60671C8.96464 4.72748 9.09941 4.85975 9.19828 5.03832C9.29691 5.21647 9.33806 5.40146 9.35709 5.60172C9.37502 5.79029 9.37501 6.01751 9.375 6.28592L9.375 9.26105V9.26108C9.37501 9.72133 9.37503 10.1034 9.33519 10.4065C9.29331 10.725 9.20146 11.0121 8.97523 11.2434C8.74785 11.4759 8.4638 11.5715 8.14835 11.6148C7.85041 11.6558 7.47531 11.6558 7.02649 11.6558H5.97352C5.52469 11.6558 5.14959 11.6558 4.85165 11.6148C4.5362 11.5715 4.25215 11.4759 4.02478 11.2434C3.79855 11.0121 3.70669 10.725 3.66481 10.4065C3.62498 10.1034 3.62499 9.72132 3.625 9.26107V9.26106L3.625 6.28593V6.2859C3.62499 6.0175 3.62499 5.79028 3.64291 5.60172C3.66194 5.40146 3.70309 5.21647 3.80173 5.03832C3.90059 4.85975 4.03536 4.72748 4.19486 4.60671C4.3444 4.49349 4.53557 4.3762 4.76019 4.23838L4.76019 4.23838L5.29044 3.91302C5.52785 3.76734 5.72975 3.64344 5.90715 3.55815Z" fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.80919 3.89054C4.66245 3.91552 4.4766 3.96541 4.18599 4.04423L3.62371 4.19675C3.34858 4.27138 3.17354 4.31935 3.04255 4.36831C2.92005 4.4141 2.87307 4.44798 2.845 4.47505C2.81844 4.50067 2.78676 4.54115 2.74326 4.65119C2.69538 4.77228 2.64879 4.93502 2.57437 5.19839L1.82997 7.83265C1.70363 8.27974 1.62405 8.56555 1.59457 8.78252C1.56729 8.98326 1.59489 9.04821 1.6179 9.08601C1.61766 9.08569 1.61784 9.0859 1.6179 9.08601C1.62081 9.08976 1.64722 9.12383 1.72278 9.18113C1.79848 9.23852 1.90146 9.3028 2.0277 9.36865C2.28045 9.50048 2.59503 9.62235 2.90112 9.70232C3.15734 9.76926 3.31136 10.0335 3.24514 10.2925C3.17892 10.5515 2.91753 10.7072 2.66131 10.6402C2.28865 10.5429 1.90684 10.3957 1.58824 10.2295C1.4288 10.1464 1.27736 10.0544 1.14774 9.95609C1.02432 9.86251 0.891938 9.74188 0.801761 9.59378C0.61705 9.29042 0.60198 8.96828 0.645141 8.65068C0.685043 8.35707 0.78478 8.00421 0.899387 7.59875C0.902409 7.58806 0.90544 7.57734 0.908481 7.56657L1.65288 4.93231C1.65484 4.92539 1.65679 4.91849 1.65873 4.91161C1.7255 4.67528 1.78512 4.46425 1.85336 4.29166C1.92796 4.10299 2.02481 3.92713 2.1835 3.7741C2.34069 3.62252 2.51968 3.53091 2.71017 3.45971C2.88758 3.39339 3.10584 3.3342 3.35591 3.26638L3.95774 3.10314C4.22245 3.03133 4.45275 2.96884 4.65001 2.93526C4.86215 2.89914 5.0717 2.88932 5.29262 2.94545C5.66563 3.04022 5.93559 3.29413 6.22759 3.57736C6.41854 3.76257 6.4248 4.06919 6.24158 4.26221C6.05835 4.45523 5.75502 4.46156 5.56407 4.27635C5.24384 3.96575 5.14766 3.90749 5.05901 3.88496C5.0116 3.87292 4.94603 3.86724 4.80919 3.89054Z" fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52372 2.05979C5.19913 2.26692 4.89115 2.62397 4.69916 3.08859C4.63541 3.24286 4.58974 3.39629 4.56065 3.54523C4.51039 3.80263 4.26219 3.97031 4.00628 3.91975C3.75038 3.86919 3.58368 3.61954 3.63394 3.36214C3.67538 3.14993 3.73957 2.93575 3.82707 2.724C4.08746 2.09386 4.51649 1.57756 5.01779 1.25766C5.51664 0.939329 6.12646 0.795191 6.70401 1.00289C7.28819 1.21298 7.6507 1.71503 7.79671 2.28399C7.94216 2.85074 7.88499 3.51103 7.62479 4.14072C7.37244 4.75143 6.96194 5.2547 6.48123 5.57624C6.26408 5.7215 5.97096 5.66218 5.82655 5.44375C5.68214 5.22533 5.74111 4.9305 5.95827 4.78524C6.27203 4.57537 6.56685 4.22591 6.7527 3.77613C6.94488 3.31107 6.9698 2.86248 6.88227 2.52141C6.7953 2.18255 6.60976 1.97782 6.38605 1.89737C6.15571 1.81453 5.85075 1.8511 5.52372 2.05979Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <div class="nav_link_tag">
+                                    <div class="nav_link_tag_title text-youth">Trabajos</div>
+                                </div>
+                                <div class="nav_link_dot is-mobile"></div>
+                            </div>
+                        </a>
+                        <a href="/nosotros.html" class="nav_link w-inline-block">
+                            <div class="nav_link_btn_inner">
+                                <div class="nav_link_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" class="icon">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.625 5.96973C0.625 3.0012 3.03147 0.594727 6 0.594727C8.96853 0.594727 11.375 3.0012 11.375 5.96973C11.375 8.93826 8.96853 11.3447 6 11.3447C3.03147 11.3447 0.625 8.93826 0.625 5.96973ZM4.67109 5.28974C4.7705 5.10805 4.99838 5.04135 5.18007 5.14076C5.41375 5.26862 5.69471 5.34474 6.00007 5.34474C6.30543 5.34474 6.58639 5.26862 6.82007 5.14076C7.00176 5.04135 7.22964 5.10805 7.32905 5.28974C7.42846 5.47143 7.36176 5.6993 7.18007 5.79871C6.83492 5.98756 6.43001 6.09474 6.00007 6.09474C5.57014 6.09474 5.16522 5.98756 4.82007 5.79871C4.63838 5.6993 4.57168 5.47143 4.67109 5.28974ZM4.5 2.84473C4.15482 2.84473 3.875 3.12455 3.875 3.46973C3.875 3.81491 4.15482 4.09473 4.5 4.09473H4.50336C4.84854 4.09473 5.12836 3.81491 5.12836 3.46973C5.12836 3.12455 4.84854 2.84473 4.50336 2.84473H4.5ZM7.49664 2.84473C7.15146 2.84473 6.87164 3.12455 6.87164 3.46973C6.87164 3.81491 7.15146 4.09473 7.49664 4.09473H7.5C7.84518 4.09473 8.125 3.81491 8.125 3.46973C8.125 3.12455 7.84518 2.84473 7.5 2.84473H7.49664Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <div class="nav_link_tag">
+                                    <div class="nav_link_tag_title text-youth">Nosotros</div>
+                                </div>
+                                <div class="nav_link_dot is-mobile"></div>
+                            </div>
+                        </a>
+                        <a href="/contact.html" class="nav_link w-inline-block">
+                            <div class="nav_link_btn_inner">
+                                <div class="nav_link_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 17" fill="none" class="icon">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4334 0.822297C9.80589 0.781404 8.19427 0.781402 6.56674 0.822292L6.51827 0.823509C5.24758 0.855414 4.2251 0.881086 3.40566 1.02379C2.54775 1.1732 1.85048 1.45977 1.26143 2.05106C0.674844 2.63988 0.389781 3.32712 0.243214 4.17113C0.103656 4.97477 0.0824007 5.9723 0.0560704 7.208L0.0550272 7.25695C0.0373213 8.08724 0.0373217 8.91268 0.0550283 9.74297L0.0560716 9.79192C0.0824029 11.0276 0.103659 12.0251 0.243217 12.8288C0.389785 13.6728 0.674847 14.36 1.26143 14.9489C1.85049 15.5401 2.54775 15.8267 3.40567 15.9761C4.22508 16.1188 5.24754 16.1445 6.5182 16.1764H6.51822L6.56674 16.1776C8.19427 16.2185 9.80589 16.2185 11.4334 16.1776L11.4819 16.1764H11.482C12.7526 16.1445 13.7751 16.1188 14.5945 15.9761C15.4524 15.8267 16.1497 15.5401 16.7387 14.9489C17.3253 14.36 17.6104 13.6728 17.757 12.8288C17.8965 12.0251 17.9178 11.0276 17.9441 9.79191L17.9451 9.74297C17.9628 8.91268 17.9628 8.08725 17.9451 7.25696L17.9441 7.20802C17.9178 5.97231 17.8965 4.97479 17.7569 4.17114C17.6104 3.32714 17.3253 2.63989 16.7387 2.05108C16.1497 1.45978 15.4524 1.17322 14.5945 1.02381C13.7751 0.881097 12.7526 0.855422 11.4819 0.823514L11.4334 0.822297ZM5.1516 5.04539C4.85447 4.86971 4.47119 4.96817 4.29551 5.2653C4.11984 5.56243 4.2183 5.94572 4.51543 6.12139L6.96711 7.57092C7.69281 7.99998 8.31903 8.29172 9.00018 8.29172C9.68133 8.29172 10.3075 7.99998 11.0333 7.57092L13.4849 6.12139C13.7821 5.94572 13.8805 5.56243 13.7048 5.2653C13.5292 4.96817 13.1459 4.86971 12.8488 5.04539L10.3971 6.49491C9.69345 6.91093 9.31935 7.04172 9.00018 7.04172C8.68101 7.04172 8.30691 6.91093 7.60328 6.49491L5.1516 5.04539Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <div class="nav_link_tag">
+                                    <div class="nav_link_tag_title text-youth">Contacto</div>
+                                </div>
+                                <div class="nav_link_dot is-mobile"></div>
+                            </div>
+                        </a>
+                    </nav>
+                    <div class="header_mobile">
+                        <a href="/" class="ba_logo w-inline-block">
+                            <svg width="121" height="38" viewBox="0 0 121 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="ba_logo_appart ba_logo_svg">
+                                <g clip-path="url(#clip0_224_298)">
+                                <path d="M120.186 28.9487C120.186 30.3374 119.992 31.5971 119.605 32.7181C119.226 33.844 118.706 34.7913 118.035 35.5551C117.375 36.3238 116.582 36.914 115.656 37.3207C114.74 37.7274 113.757 37.9358 112.713 37.9358C110.337 37.9358 108.487 37.2116 107.16 35.7535C105.843 34.2853 105.186 32.2121 105.186 29.5239V26.429H110.474V29.7422C110.474 30.4564 110.637 31.0417 110.967 31.488C111.307 31.9394 111.796 32.1626 112.43 32.1626C113.665 32.1626 114.281 31.3789 114.281 29.8017C114.281 28.3336 113.938 26.9995 113.259 25.7943C112.576 24.579 111.695 23.2151 110.615 21.7074C110.016 20.9683 109.403 20.155 108.782 19.2671C108.169 18.3694 107.605 17.4221 107.09 16.4301C106.583 15.4282 106.164 14.3818 105.838 13.2956C105.508 12.1994 105.344 11.0934 105.344 9.98243C105.344 8.76729 105.503 7.61661 105.821 6.53042C106.138 5.44919 106.613 4.487 107.248 3.65375C107.883 2.81059 108.668 2.14598 109.61 1.66984C110.562 1.18378 111.69 0.935791 112.995 0.935791C115.062 0.935791 116.718 1.6996 117.965 3.21729C119.221 4.72507 119.851 6.74865 119.851 9.28806V12.4028H114.563V8.87144C114.563 8.22667 114.409 7.72077 114.105 7.36367C113.81 7.00656 113.44 6.82801 112.995 6.82801C112.545 6.82801 112.14 7.0016 111.779 7.34382C111.412 7.67613 111.232 8.19691 111.232 8.91112C111.232 9.77412 111.32 10.533 111.496 11.1926C111.673 11.8572 111.923 12.4921 112.254 13.0971C112.594 13.7072 112.995 14.3223 113.453 14.9422C113.911 15.5672 114.409 16.2863 114.952 17.1047C115.586 17.9677 116.221 18.8505 116.855 19.7631C117.49 20.6758 118.045 21.623 118.53 22.6001C119.023 23.5821 119.42 24.5989 119.728 25.6553C120.032 26.7019 120.186 27.7979 120.186 28.9487Z" fill="currentColor"></path>
+                                <path d="M105.186 29.6827C105.186 30.9027 104.975 32.0187 104.563 33.0355C104.145 34.0572 103.572 34.9202 102.837 35.6344C102.112 36.3486 101.278 36.914 100.324 37.3207C99.3699 37.7274 98.3289 37.9358 97.2051 37.9358C96.076 37.9358 95.0262 37.7274 94.0486 37.3207C93.0807 36.914 92.2326 36.3486 91.498 35.6344C90.7732 34.9202 90.2051 34.0572 89.7921 33.0355C89.3887 32.0187 89.1862 30.9027 89.1862 29.6827V9.12934C89.1862 7.9142 89.3887 6.80816 89.7921 5.81621C90.2051 4.81434 90.7732 3.94638 91.498 3.21729C92.2326 2.47828 93.0807 1.91783 94.0486 1.53096C95.0262 1.13418 96.076 0.935791 97.2051 0.935791C98.3289 0.935791 99.3699 1.13418 100.324 1.53096C101.278 1.91783 102.112 2.47828 102.837 3.21729C103.572 3.94638 104.145 4.81434 104.563 5.81621C104.975 6.80816 105.186 7.9142 105.186 9.12934V29.6827ZM98.6909 8.69288C98.6909 8.20682 98.5491 7.82988 98.269 7.56205C97.9845 7.2843 97.6314 7.14543 97.2051 7.14543C96.7735 7.14543 96.4063 7.2843 96.1042 7.56205C95.81 7.82988 95.6638 8.20682 95.6638 8.69288V30.1191C95.6638 30.6251 95.81 31.0069 96.1042 31.2698C96.4063 31.5376 96.7735 31.6666 97.2051 31.6666C97.6314 31.6666 97.9845 31.5376 98.269 31.2698C98.5491 31.0069 98.6909 30.6251 98.6909 30.1191V8.69288Z" fill="currentColor"></path>
+                                <path d="M83.1072 36.9358L79.0407 22.5893L77.6023 17.7033V36.9358H72.1862V1.93579H77.8331L81.5267 16.2823L82.8231 21.2267V1.93579H88.1862V36.9358H83.1072Z" fill="currentColor"></path>
+                                <path d="M65.1862 36.9358V1.93579H71.1862V36.9358H65.1862Z" fill="currentColor"></path>
+                                <path d="M57.9729 36.9358V23.0176H54.4353V36.9358H48.1862V1.93579H54.4353V16.8079H57.9729V1.93579H64.1862V36.9358H57.9729Z" fill="currentColor"></path>
+                                <path d="M42.134 36.9358L41.7166 31.3101H38.1514L37.6296 36.9358H32.1862L36.7427 1.93579H43.6818L48.1862 36.9358H42.134ZM40.1688 12.2333L38.8123 25.8596H41.1948L40.1688 12.2333Z" fill="currentColor"></path>
+                                <path d="M25.9729 36.9358V23.0176H22.4353V36.9358H16.1862V1.93579H22.4353V16.8079H25.9729V1.93579H32.1862V36.9358H25.9729Z" fill="currentColor"></path>
+                                <path d="M16.1862 29.6959C16.1862 30.914 16.0167 32.0282 15.6779 33.0433C15.3391 34.0634 14.8356 34.9251 14.172 35.6381C13.5179 36.3512 12.7274 36.9156 11.8002 37.3217C10.8685 37.7278 9.82848 37.9358 8.67556 37.9358C7.48027 37.9358 6.36968 37.7278 5.3438 37.3217C4.31321 36.9156 3.41439 36.3413 2.65204 35.5985C1.88498 34.8459 1.28263 33.9445 0.84498 32.8849C0.402628 31.8302 0.186157 30.6615 0.186157 29.3791V9.49253C0.186157 8.21496 0.402628 7.05128 0.84498 6.00645C1.28263 4.95171 1.88498 4.04553 2.65204 3.29286C3.41439 2.54018 4.31321 1.96082 5.3438 1.54981C6.36968 1.14377 7.48027 0.935791 8.67556 0.935791C9.82848 0.935791 10.8685 1.14377 11.8002 1.54981C12.7274 1.96082 13.5179 2.52037 14.172 3.23344C14.8356 3.9465 15.3391 4.81306 15.6779 5.82818C16.0167 6.84826 16.1862 7.96241 16.1862 9.1756V14.583H10.5014V9.07657C10.5014 8.53682 10.3556 8.08621 10.0685 7.72968C9.77671 7.37315 9.31555 7.19488 8.67556 7.19488C8.05909 7.19488 7.60262 7.37315 7.30145 7.72968C7.00027 8.08621 6.84968 8.53682 6.84968 9.07657V29.8148C6.84968 30.3446 7.00027 30.7853 7.30145 31.1418C7.60262 31.4984 8.05909 31.6766 8.67556 31.6766C9.31555 31.6766 9.77671 31.4984 10.0685 31.1418C10.3556 30.7853 10.5014 30.3446 10.5014 29.8148V24.2489H16.1862V29.6959Z" fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_224_298">
+                                <rect width="120" height="37" fill="white" transform="translate(0 1)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="98" height="38" viewBox="0 0 98 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="ba_logo_appart ba_logo_svg">
+                                <g clip-path="url(#clip0_224_308)">
+                                <path d="M91.6156 22.6944V36.9399H85.1805V22.6944L79.5847 1.93994H86.0758L88.7991 15.0358L91.261 1.93994H97.5847L91.6156 22.6944Z" fill="currentColor"></path>
+                                <path d="M81.5847 29.7111C81.5847 30.9305 81.4151 32.0459 81.0759 33.0621C80.7367 34.0684 80.2325 34.926 79.5683 35.6398C78.9134 36.3536 78.1218 36.9188 77.1937 37.3253C76.2608 37.7318 75.2196 37.9399 74.0653 37.9399C72.8827 37.9399 71.7709 37.7318 70.7296 37.3253C69.6978 36.9188 68.7979 36.3437 68.0347 35.6002C67.2808 34.8467 66.6825 33.9495 66.2443 32.9035C65.8015 31.8477 65.5847 30.6778 65.5847 29.3938V9.50586C65.5847 8.22692 65.8015 7.06199 66.2443 6.01604C66.6825 4.96017 67.2808 4.05302 68.0347 3.29954C68.7979 2.54605 69.6978 1.96607 70.7296 1.55463C71.7709 1.14814 72.8827 0.939941 74.0653 0.939941C75.2196 0.939941 76.2608 1.14814 77.1937 1.55463C78.1218 1.96607 78.9134 2.52622 79.5683 3.24005C80.2325 3.95388 80.7367 4.82138 81.0759 5.83758C81.4151 6.85875 81.5847 7.97411 81.5847 9.18861V14.5819H75.8934V9.06964C75.8934 8.54417 75.7473 8.09803 75.4599 7.74112C75.1678 7.38421 74.7061 7.20575 74.0653 7.20575C73.4623 7.20575 73.0005 7.38421 72.6896 7.74112C72.3881 8.09803 72.2373 8.54417 72.2373 9.06964V29.8102C72.2373 30.3556 72.3881 30.8017 72.6896 31.1586C73.0005 31.5155 73.4623 31.694 74.0653 31.694C74.7061 31.694 75.1678 31.5155 75.4599 31.1586C75.7473 30.8017 75.8934 30.3556 75.8934 29.8102V24.2583H81.5847V29.7111Z" fill="currentColor"></path>
+                                <path d="M59.1885 36.9399L54.8677 22.597L53.3394 17.7055V36.9399H47.5847V1.93994H53.6036L57.5092 16.2829L58.8866 21.2329V1.93994H64.5847V36.9399H59.1885Z" fill="currentColor"></path>
+                                <path d="M33.5847 36.9399V1.93994H47.5847V7.8837H40.1921V16.2439H45.0567V21.7006H40.1921V30.8013H47.5847V36.9399H33.5847Z" fill="currentColor"></path>
+                                <path d="M28.9108 37.2448L28.2679 34.8417C27.7994 35.8348 27.1473 36.6044 26.3023 37.1456C25.4665 37.6719 24.5755 37.9399 23.6204 37.9399C22.5273 37.9399 21.5491 37.7414 20.6811 37.3441C19.8224 36.9619 19.0876 36.4107 18.4768 35.6957C17.8752 34.9807 17.4114 34.1367 17.0807 33.1536C16.75 32.1754 16.5847 31.098 16.5847 29.9163V8.92384C16.5847 7.85138 16.7776 6.83353 17.1726 5.86534C17.5629 4.9021 18.1094 4.05307 18.8074 3.32319C19.5055 2.59829 20.3367 2.02234 21.3058 1.59534C22.2839 1.15841 23.3677 0.939941 24.5572 0.939941C25.742 0.939941 26.8167 1.15841 27.7719 1.59534C28.7271 2.02234 29.54 2.59829 30.215 3.32319C30.8993 4.05307 31.4183 4.9021 31.7765 5.86534C32.1438 6.83353 32.3276 7.85138 32.3276 8.92384V14.8026H26.339V8.80468C26.339 7.70739 25.7742 7.15626 24.649 7.15626C23.556 7.15626 23.0142 7.70739 23.0142 8.80468V30.1745C23.0142 30.6809 23.161 31.103 23.455 31.4456C23.7581 31.7783 24.176 31.9421 24.7041 31.9421C25.2644 31.9421 25.6961 31.7783 25.99 31.4456C26.2839 31.103 26.4309 30.6809 26.4309 30.1745V24.3356H24.7592V19.5293H32.5847V37.2448H28.9108Z" fill="currentColor"></path>
+                                <path d="M11.1658 36.9399L10.7033 31.3275H6.91117L6.37471 36.9399H0.584717L5.4313 1.93994H12.8121L17.5847 36.9399H11.1658ZM9.05701 12.249L7.61411 25.8515H10.1669L9.05701 12.249Z" fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_224_308">
+                                <rect width="98" height="37" fill="white" transform="translate(0 1)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <div class="lang text-small text-grey text-youth">PE</div>
+                        <div data-nav-toggle="" class="menu_toggle">
+                            <div class="menu_toggle_icon">
+                                <div class="menu_toggle_line"></div>
+                                <div class="menu_toggle_line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_btns">
+                        <div class="header_btns_contact">
+                            <a href="/contacto-proyect.html" data-wf-event-ids="157039859" class="btn w-inline-block">
+                                <div class="btn-inner">
+                                    <div class="btn-text text-youth">reservar ahora</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <c-scroll-progress class="page_scroll_progress">
+                        <div data-progress-line="" class="scroll_progress_line"></div>
+                        <div class="scroll_progress_cursor">
+                            <div class="scroll_progress_cursor_dot"></div>
+                        </div>
+                        <div class="scroll_progress_line"></div>
+                    </c-scroll-progress>
+                    <div class="current_time text-small text-grey">
+                        <div>Lima, Perú
+                        <!-- -->
+                        </div>
+                        <c-current-time></c-current-time>
+                    </div>
+                </div>
+                <div data-nav-toggle="" class="nav_overlay"></div>
+            </c-header>
+            <c-scroll class="c-scroll">
+                <c-transition class="c-transition">
+                    <main data-swup-container="project" class="transition-fade">
+                        <div data-slug="Cuerpo de Bomberos" class="project-single">
+                            <div class="project_nav u-flex">
+                                <a href="/trabajos.html" class="btn_icon w-inline-block">
+                                    <div class="icon-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="icon">
+                                            <path d="M4 15L3.46967 14.4697C3.17678 14.7626 3.17678 15.2374 3.46967 15.5303L4 15ZM7.53033 12.5303C7.82322 12.2374 7.82322 11.7626 7.53033 11.4697C7.23744 11.1768 6.76256 11.1768 6.46967 11.4697L7.53033 12.5303ZM6.46967 18.5303C6.76256 18.8232 7.23744 18.8232 7.53033 18.5303C7.82322 18.2374 7.82322 17.7626 7.53033 17.4697L6.46967 18.5303ZM6.46967 11.4697L3.46967 14.4697L4.53033 15.5303L7.53033 12.5303L6.46967 11.4697ZM3.46967 15.5303L6.46967 18.5303L7.53033 17.4697L4.53033 14.4697L3.46967 15.5303Z" fill="currentColor"></path>
+                                            <path d="M11 5.25C10.5858 5.25 10.25 5.58579 10.25 6C10.25 6.41421 10.5858 6.75 11 6.75V5.25ZM4.00001 14.25C3.5858 14.25 3.25001 14.5858 3.25001 15C3.25001 15.4142 3.5858 15.75 4.00001 15.75V14.25ZM11 6.75H16V5.25H11V6.75ZM16 15.75C17.3742 15.75 18.5687 15.0388 19.3991 14.0651C20.2284 13.0926 20.75 11.7983 20.75 10.5H19.25C19.25 11.4109 18.8762 12.3665 18.2577 13.0918C17.6404 13.8157 16.835 14.25 16 14.25V15.75ZM16 6.75C16.8349 6.75 17.6404 7.18427 18.2577 7.90822C18.8762 8.63348 19.25 9.58913 19.25 10.5H20.75C20.75 9.20173 20.2284 7.90738 19.3991 6.93492C18.5687 5.96116 17.3741 5.25 16 5.25V6.75ZM16 14.25H4.00001V15.75H16V14.25Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="https://gianmattus-programmer.netlify.app/workspages/bomberos/cuerpo-de-bomberos" target="_blank" class="btn_icon w-inline-block">
+                                    <div class="icon-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 13" fill="none" class="icon">
+                                            <circle cx="6" cy="6.71973" r="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                            <ellipse cx="6" cy="6.71973" rx="2" ry="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                                            <path d="M1 6.71973H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div data-color="" style="background-color:#e91f64" class="project_hero hero">
+                                <div class="hero_container container project_hero_container">
+                                    <div class="project_headline headline">
+                                        <h1 data-text-reveal="" class="project_title">Cuerpo de Bomberos</h1>
+                                        <div class="project_infos u-flex">
+                                            <div class="project_info u-flex">
+                                                <div data-text-reveal="" class="subtitle">
+                                                    Año<br/>
+                                                </div>
+                                                <div data-text-reveal="" class="project_info_text">2025</div>
+                                            </div>
+                                            <div class="project_info u-flex">
+                                                <div data-text-reveal="" class="subtitle">
+                                                    industria<br/>
+                                                </div>
+                                                <div data-text-reveal="" class="project_info_text">Servicio Público</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project_hero_content">
+                                        <div class="project_baseline">
+                                            <p class="text-large">La solución digital que impulsa la eficiencia operativa</p>
+                                        </div>
+                                        <div data-text-reveal="" class="scroll_down">(Desplácese hacia abajo)</div>
+                                    </div>
+                                </div>
+                                <c-trail class="c-trail">
+                                    <div class="trail_wrapper u-cover">
+                                        <div class="trail_items u-cover">
+                                            <div class="trail_item">
+                                                <img src="https://cdn.prod.website-files.com/67f7891166d9b83b9231109e/68585f5151602bf1c5bc6728_trends%201.avif" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/67f7891166d9b83b9231109e/68585f5151602bf1c5bc6728_trends%201-p-500.avif 500w, https://cdn.prod.website-files.com/67f7891166d9b83b9231109e/68585f5151602bf1c5bc6728_trends%201.avif 1507w" class="u-fluid"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </c-trail>
+                            </div>
+                            <div class="project_content u-section">
+                                <div class="container u-spaced">
+                                    <div class="project_description row">
+                                        <div data-inview="" class="project_description_text">
+                                            <div class="text-large w-richtext">
+                                                <p>El sistema desarrollado para el Cuerpo de Bomberos del Perú gestiona partes de emergencia, servicio especial y comisión de servicios, además de la operatividad de compañías, asistencia de choferes y generación de reportes. También incluye una agenda personal y compartida para optimizar la organización y coordinación.</p>
+                                                <p>‍</p>
+                                            </div>
+                                        </div>
+                                        <div class="project_services">
+                                            <h4 class="subtitle">servicios</h4>
+                                            <div class="w-dyn-list">
+                                                <div role="list" class="services_list u-flex w-dyn-items">
+                                                    <div data-inview="" role="listitem" class="service_item w-dyn-item">
+                                                        <div class="text-small">Product Design</div>
+                                                    </div>
+                                                    <div data-inview="" role="listitem" class="service_item w-dyn-item">
+                                                        <div class="text-small">UX/UI Design</div>
+                                                    </div>
+                                                    <div data-inview="" role="listitem" class="service_item w-dyn-item">
+                                                        <div class="text-small">Web App Development</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-inview="" class="project_case_link">
+                                            <a href="https://gianmattus-programmer.netlify.app/workspages/bomberos/cuerpo-de-bomberos" target="_blank" class="link-block-2 w-inline-block">
+                                                <div data-wf--btn-link--variant="base" class="link">
+                                                    <div class="link-title text-youth">Explorar en Portafolio</div>
+                                                    <div class="link-icon">
+                                                        <div class="icon-svg"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="project_gallery">
+                                        <div class="project_gallery_wrapper w-dyn-list">
+                                            <div role="list" class="project_gallery_items w-dyn-items">
+                                                <div data-inview="" role="listitem" class="project_gallery_item w-dyn-item w-dyn-repeater-item">
+                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763101700/page8_hefb60_1_qy1ici.jpg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                    </div>
+                                                </div>
+                                                <div data-inview="" role="listitem" class="project_gallery_item w-dyn-item w-dyn-repeater-item">
+                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763276315/page1_ztzevl_1_i1pobn.svg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                    </div>
+                                                </div>
+                                                <div data-inview="" role="listitem" class="project_gallery_item w-dyn-item w-dyn-repeater-item">
+                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763101699/page2_kaqcoq_1_o3ns0z.jpg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                    </div>
+                                                </div>
+                                                <div data-inview="" role="listitem" class="project_gallery_item w-dyn-item w-dyn-repeater-item">
+                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763101701/page3_fmsaru_1_tmdlb4.jpg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                    </div>
+                                                </div>
+                                                <div data-inview="" role="listitem" class="project_gallery_item w-dyn-item w-dyn-repeater-item">
+                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763101702/page4_dbncn6_1_tqcqyr.jpg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                    </div>
+                                                </div>
+                                                <div data-inview="" role="listitem" class="project_gallery_item w-dyn-item w-dyn-repeater-item">
+                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763101703/page5_pccjsy_1_nagkxp.jpg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                    </div>
+                                                </div>
+                                                <div data-inview="" role="listitem" class="project_gallery_item w-dyn-item w-dyn-repeater-item">
+                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1763101700/page6_wit3yh_1_xbuld7.jpg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-dyn-hide w-dyn-empty"></div>
+                                        </div>
+                                    </div>
+                                    <div class="project_feedback row">
+                                        <div data-inview="" class="kpis w-condition-invisible">
+                                            <h4 data-text-reveal="" class="subtitle">KPIS</h4>
+                                            <div class="kpis-content w-dyn-bind-empty w-richtext"></div>
+                                        </div>
+                                        <div data-inview="" class="project_testimonial w-condition-invisible">
+                                            <div data-wf--card-testimonial--variant="base" class="testimonial_card">
+                                                <div class="testimonial_card_top">
+                                                    <h4 class="testimonial_subtitle subtitle">Testimonial</h4>
+                                                    <blockquote data-quote="" class="quote text-large"></blockquote>
+                                                </div>
+                                                <div class="testimonial_card_btm u-flex">
+                                                    <div class="author u-flex">
+                                                        <div class="author_pic u-rounded">
+                                                            <div data-wf--component-image--variant="cover" class="visual-container w-variant-84208cb3-086f-ac7b-a07a-d420ea424516">
+                                                                <img src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" width="Auto" alt="" class="u-fluid w-variant-84208cb3-086f-ac7b-a07a-d420ea424516"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="author-infos">
+                                                            <span class="author_name u-block"></span>
+                                                            <span class="author_job u-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="/contact" class="w-inline-block">
+                                                        <div data-wf--btn-link--variant="white" class="link w-variant-4387267f-c0aa-faa6-ab2d-9a748c878ebc">
+                                                            <div class="link-title text-youth">contact sales</div>
+                                                            <div class="link-icon w-variant-4387267f-c0aa-faa6-ab2d-9a748c878ebc">
+                                                                <div class="icon-svg">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" class="icon">
+                                                                        <path d="M2.65863 0.643284C2.94197 0.701846 3.16762 0.892216 3.30782 1.14373L3.75442 1.94496C3.91893 2.24006 4.05737 2.4884 4.14777 2.70428C4.24367 2.93329 4.30063 3.15912 4.27459 3.4088C4.24856 3.65848 4.14623 3.8677 4.00514 4.072C3.87214 4.26458 3.68544 4.47902 3.46359 4.73383L2.80709 5.48793C2.68944 5.62306 2.63062 5.69062 2.62524 5.77507C2.61987 5.85952 2.66808 5.93166 2.7645 6.07592C3.58629 7.30545 4.69387 8.41341 5.92441 9.2359C6.06868 9.33233 6.14081 9.38054 6.22526 9.37517C6.30971 9.36979 6.37728 9.31097 6.51241 9.19332L7.26655 8.53678C7.52136 8.31493 7.73579 8.12824 7.92838 7.99523C8.13267 7.85415 8.34189 7.75182 8.59157 7.72578C8.84126 7.69974 9.06709 7.7567 9.29609 7.85261C9.51196 7.943 9.7603 8.08144 10.0554 8.24592L10.8566 8.69256C11.1082 8.83275 11.2985 9.0584 11.3571 9.34175C11.4163 9.62805 11.329 9.91582 11.1362 10.1523C10.4368 11.0105 9.31612 11.5569 8.14051 11.3198C7.41788 11.174 6.70488 10.9312 5.84253 10.4366C4.10985 9.44291 2.55631 7.88852 1.56378 6.15785C1.06922 5.2955 0.82636 4.5825 0.680588 3.85987C0.44344 2.68426 0.989857 1.56362 1.84804 0.864167C2.08456 0.671396 2.37233 0.58411 2.65863 0.643284Z" fill="currentColor"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="credits">
+                                        <h4 data-text-reveal="" class="subtitle">Créditos</h4>
+                                        <div class="credits_list u-flex">
+                                            <div data-inview="" class="credits_list_item u-flex">
+                                                <div class="credit_list_job text-small">
+                                                    <div>Director de Proyecto</div>
+                                                </div>
+                                                <div class="credits_members w-dyn-list">
+                                                    <div role="list" class="credits_members_list u-flex w-dyn-items">
+                                                        <div role="listitem" class="w-dyn-item">
+                                                            <div class="team-member">
+                                                                <div class="team-member-portrait">
+                                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1762815612/Giancarlos-Chavez2_bpy6cy.svg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                                    </div>
+                                                                </div>
+                                                                <div>Giancarlos Chavez</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-inview="" class="credits_list_item u-flex">
+                                                <div class="credit_list_job text-small">
+                                                    <div>Analista de Sistemas</div>
+                                                </div>
+                                                <div class="credits_members w-dyn-list">
+                                                    <div role="list" class="credits_members_list u-flex w-dyn-items">
+                                                        <div role="listitem" class="w-dyn-item">
+                                                            <div class="team-member">
+                                                                <div class="team-member-portrait">
+                                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1762815612/Giancarlos-Chavez2_bpy6cy.svg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                                    </div>
+                                                                </div>
+                                                                <div>Giancarlos Chavez</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-inview="" class="credits_list_item u-flex">
+                                                <div class="credit_list_job text-small">
+                                                    <div>Diseñador UX/UI</div>
+                                                </div>
+                                                <div class="credits_members w-dyn-list">
+                                                    <div role="list" class="credits_members_list u-flex w-dyn-items">
+                                                        <div role="listitem" class="w-dyn-item">
+                                                            <div class="team-member">
+                                                                <div class="team-member-portrait">
+                                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1762815612/Giancarlos-Chavez2_bpy6cy.svg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                                    </div>
+                                                                </div>
+                                                                <div>Giancarlos Chavez</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-inview="" class="credits_list_item u-flex">
+                                                <div class="credit_list_job text-small">
+                                                    <div>Desarrollador Web</div>
+                                                </div>
+                                                <div class="credits_members w-dyn-list">
+                                                    <div role="list" class="credits_members_list u-flex w-dyn-items">
+                                                        <div role="listitem" class="w-dyn-item">
+                                                            <div class="team-member">
+                                                                <div class="team-member-portrait">
+                                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1762815612/Giancarlos-Chavez2_bpy6cy.svg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                                    </div>
+                                                                </div>
+                                                                <div>Giancarlos Chavez</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-inview="" class="credits_list_item u-flex">
+                                                <div class="credit_list_job text-small">
+                                                    <div>QA / Tester</div>
+                                                </div>
+                                                <div class="credits_members w-dyn-list">
+                                                    <div role="list" class="credits_members_list u-flex w-dyn-items">
+                                                        <div role="listitem" class="w-dyn-item">
+                                                            <div class="team-member">
+                                                                <div class="team-member-portrait">
+                                                                    <div data-wf--component-image--variant="base" class="visual-container">
+                                                                        <img src="https://res.cloudinary.com/dc5ckfnwz/image/upload/v1762815612/Giancarlos-Chavez2_bpy6cy.svg" loading="lazy" width="Auto" alt="" class="u-fluid"/>
+                                                                    </div>
+                                                                </div>
+                                                                <div>Giancarlos Chavez</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <aside class="project-aside u-flex">
+                                        <div data-inview="" class="made_with_love is-rounded">
+                                            <div class="inner">
+                                                <div class="made-svgs">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 151 35" fill="none" class="made-svg">
+                                                        <path d="M30.3179 0.865149C31.0896 0.865149 31.7251 1.43339 31.7251 2.38047V34.1548H30.1817V2.56988L17.4721 33.1131C17.1543 33.9654 16.7004 34.2969 16.1103 34.2969C15.5202 34.2969 15.0663 33.9654 14.7486 33.1131L1.99351 2.52253V34.1548H0.450195V2.42782C0.450195 1.43339 1.17646 0.865149 1.85734 0.865149C2.629 0.865149 3.1737 1.33869 3.49144 2.23841L16.1103 32.5448L28.7292 2.23841C29.047 1.38604 29.5463 0.865149 30.3179 0.865149Z" fill="currentColor"></path>
+                                                        <path d="M56.9891 34.1548H55.3096L52.223 24.6367H37.743L34.6564 34.1548H32.9769L43.5985 2.28576C43.8709 1.43339 44.1886 0.865149 45.0057 0.865149C45.8227 0.865149 46.1859 1.43339 46.4582 2.28576L56.9891 34.1548ZM45.0057 2.52253L38.2423 23.1688H51.7236L45.0057 2.52253Z" fill="currentColor"></path>
+                                                        <path d="M62.2105 34.1548H58.3522V1.00721H62.2105C74.2847 1.00721 80.1857 8.25233 80.1857 17.581C80.1857 26.815 74.2847 34.1548 62.2105 34.1548ZM59.8956 2.47518V32.6869H62.3013C72.2875 32.6869 78.5969 27.0044 78.5969 17.581C78.5969 8.11027 72.3329 2.47518 62.3013 2.47518H59.8956Z" fill="currentColor"></path>
+                                                        <path d="M97.5547 34.1548H82.8478V1.00721H97.5547V2.47518H84.3911V16.2551H96.4199V17.7231H84.3911V32.6869H97.5547V34.1548Z" fill="currentColor"></path>
+                                                        <path d="M131.779 32.5922L140.177 1.00721H141.766L133.141 32.9236C132.869 33.8707 132.506 34.3443 131.734 34.3443C130.962 34.3443 130.554 33.776 130.327 32.8763L122.292 2.61724L114.258 32.8763C114.031 33.776 113.577 34.3443 112.806 34.3443C112.034 34.3443 111.671 33.8234 111.398 32.9236L102.774 1.00721H104.408L112.806 32.4975L120.885 2.19105C121.112 1.29133 121.566 0.865149 122.292 0.865149C123.019 0.865149 123.473 1.29133 123.745 2.19105L131.779 32.5922Z" fill="currentColor"></path>
+                                                        <path d="M139.542 34.7231H138.135L149.12 0.438965H150.527L139.542 34.7231Z" fill="currentColor"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 123 35" fill="none" class="love-svg">
+                                                        <path d="M18.1785 33.8677H8.37388C2.69992 33.8677 0.838867 31.7368 0.838867 25.8176V0.720099H8.82781V26.2911H18.1785V33.8677Z" fill="currentColor"></path>
+                                                        <path d="M31.1506 34.436C21.7545 34.436 14.2195 26.7647 14.2195 17.2939C14.2195 7.82316 21.7999 0.151855 31.1506 0.151855C40.5013 0.151855 48.0817 7.96522 48.0817 17.2939C48.0817 26.7647 40.5467 34.436 31.1506 34.436ZM31.1506 26.3385C36.0529 26.3385 39.4119 22.3134 39.4119 17.2939C39.4119 12.2744 36.0529 8.24935 31.1506 8.24935C26.2483 8.24935 22.8893 12.2744 22.8893 17.2939C22.8893 22.3134 26.2483 26.3385 31.1506 26.3385Z" fill="currentColor"></path>
+                                                        <path d="M58.1289 25.5335L63.8028 0.720099H72.1095L65.8454 25.7229C64.3021 31.8789 62.3049 34.1992 58.0381 34.1992C54.0436 34.1992 51.9102 31.8789 50.4123 25.8176L44.1482 0.720099H52.5003L58.1289 25.5335Z" fill="currentColor"></path>
+                                                        <path d="M88.8959 33.8677H70.6938V0.720099H88.8959V8.2967H78.6828V13.3636H88.1696V20.7981H78.6828V26.2911H88.8959V33.8677Z" fill="currentColor"></path>
+                                                        <path d="M96.3591 1.37829C97.811 1.27517 99.1241 1.57241 100.437 2.36098C100.611 2.4641 101.166 2.81593 101.311 2.94938C101.484 3.11922 102.693 4.11404 102.93 4.43554C103.046 4.59325 104.203 6.05515 104.203 6.05515C104.203 6.05515 105.302 4.82982 105.493 4.62358C105.828 4.27782 106.141 4.05338 106.384 3.86534C107.089 3.3012 107.813 2.80379 108.628 2.31852C109.201 1.97276 110.178 1.65126 110.699 1.57847C110.844 1.56027 111.231 1.50568 111.405 1.47535C113.383 1.17812 115.946 2.01522 117.398 2.89478C119 3.85927 120.105 5.29084 120.961 7.07423C121.146 7.47458 121.58 8.53612 121.661 8.79696C122.112 10.2103 122.216 11.9998 122.083 13.765C121.881 16.5129 120.758 19.3335 119.555 21.0381C119.312 21.3777 118.757 22.3665 118.08 23.2157C115.836 26.0303 112.515 29.5365 109.172 31.7505C108.235 32.3753 104.643 34.4377 104.643 34.4377C104.643 34.4377 100.9 32.2479 100.298 31.8597C96.5268 29.403 92.3446 25.9151 90.0134 21.9661C89.1978 20.5952 88.2607 19.2061 87.7285 17.5259C87.4798 16.7555 87.2542 16.0943 87.0806 15.2329C86.6699 13.213 86.7972 10.8291 87.3467 8.94254C87.5897 8.10544 87.9483 7.20161 88.3012 6.48583C89.5564 3.91993 91.8934 2.23966 94.965 1.57847C95.4451 1.48142 95.9079 1.40862 96.3591 1.37829Z" fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-inview="" class="book_a_call is-rounded">
+                                            <div class="book_a_call_inner inner">
+                                                <div class="book_a_call_content u-flex">
+                                                    <h3 class="heading-2">Tu marca, al siguiente nivel. ¡Hazlo realidad!</h3>
+                                                    <a href="#" class="w-inline-block">
+                                                        <div data-wf--btn-link--variant="base" class="link">
+                                                            <div class="link-title text-youth">Contáctanos</div>
+                                                            <div class="link-icon">
+                                                                <div class="icon-svg">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" class="icon">
+                                                                        <path d="M2.65863 0.643284C2.94197 0.701846 3.16762 0.892216 3.30782 1.14373L3.75442 1.94496C3.91893 2.24006 4.05737 2.4884 4.14777 2.70428C4.24367 2.93329 4.30063 3.15912 4.27459 3.4088C4.24856 3.65848 4.14623 3.8677 4.00514 4.072C3.87214 4.26458 3.68544 4.47902 3.46359 4.73383L2.80709 5.48793C2.68944 5.62306 2.63062 5.69062 2.62524 5.77507C2.61987 5.85952 2.66808 5.93166 2.7645 6.07592C3.58629 7.30545 4.69387 8.41341 5.92441 9.2359C6.06868 9.33233 6.14081 9.38054 6.22526 9.37517C6.30971 9.36979 6.37728 9.31097 6.51241 9.19332L7.26655 8.53678C7.52136 8.31493 7.73579 8.12824 7.92838 7.99523C8.13267 7.85415 8.34189 7.75182 8.59157 7.72578C8.84126 7.69974 9.06709 7.7567 9.29609 7.85261C9.51196 7.943 9.7603 8.08144 10.0554 8.24592L10.8566 8.69256C11.1082 8.83275 11.2985 9.0584 11.3571 9.34175C11.4163 9.62805 11.329 9.91582 11.1362 10.1523C10.4368 11.0105 9.31612 11.5569 8.14051 11.3198C7.41788 11.174 6.70488 10.9312 5.84253 10.4366C4.10985 9.44291 2.55631 7.88852 1.56378 6.15785C1.06922 5.2955 0.82636 4.5825 0.680588 3.85987C0.44344 2.68426 0.989857 1.56362 1.84804 0.864167C2.08456 0.671396 2.37233 0.58411 2.65863 0.643284Z" fill="currentColor"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="book_a_call_img">
+                                                    <img src="https://cdn.prod.website-files.com/67f67951d8f019dd5e6578a7/67f981627365f781a59afec4_keychain.avif" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://cdn.prod.website-files.com/67f67951d8f019dd5e6578a7/67f981627365f781a59afec4_keychain-p-500.avif 500w, https://cdn.prod.website-files.com/67f67951d8f019dd5e6578a7/67f981627365f781a59afec4_keychain.avif 1200w" alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                            <c-project-next data-color="" data-current-project="trends" class="c-project-next">
+                                <div class="project_next_container container">
+                                    <div data-text-reveal="" class="text-small project_next_subtitle">(Siguiente proyecto)</div>
+                                    <div class="next_scroll_progress u-flex">
+                                        <div data-text-reveal="" class="subtitle">sigue deslizando</div>
+                                        <div data-next-percent="" class="next_scroll_percent subtitle">0%</div>
+                                    </div>
+                                    <div data-next-title="" class="project_next_title">
+                                        <h3 class="project_next_title_text">Project Title</h3>
+                                    </div>
+                                </div>
+                                <div class="collection-list-wrapper w-dyn-list">
+                                    <div role="list" class="w-dyn-items">
+                                        <div style="background-color:#b251ff" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 3" data-slug="trabajo3" href="/Trabajo/trabajo3.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#5456ee" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 4" data-slug="trabajo4" href="/Trabajo/trabajo4.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:hsla(10.09345794392523, 100.00%, 58.04%, 1.00)" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 5" data-slug="trabajo5" href="/Trabajo/trabajo5.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#e82847" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 6" data-slug="trabajo6" href="/Trabajo/trabajo6.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#601fea" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 7" data-slug="trabajo7" href="/Trabajo/trabajo7.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#f3b861" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 8" data-slug="trabajo8" href="/Trabajo/trabajo8.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#0e112d" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 9" data-slug="trabajo9" href="/Trabajo/trabajo9.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#2f7cf3" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 10" data-slug="trabajo10" href="/Trabajo/trabajo10.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#ff3232" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 11" data-slug="trabajo11" href="/Trabajo/trabajo11.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#f96c30" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 12" data-slug="trabajo12" href="/Trabajo/trabajo12.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#4e8eff" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 13" data-slug="trabajo13" href="/Trabajo/trabajo13.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#9f6" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 14" data-slug="trabajo14" href="/Trabajo/trabajo14.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#f07141" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 15" data-slug="trabajo15" href="/Trabajo/trabajo15.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#6657f0" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 16" data-slug="trabajo16" href="/Trabajo/trabajo16.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#1c1c1c" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 17" data-slug="trabajo17" href="/Trabajo/trabajo17.html" aria-current="page" class="w-inline-block w--current"></a>
+                                        </div>
+                                        <div style="background-color:#03BCF4" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 18" data-slug="trabajo18" href="/Trabajo/trabajo18.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#2DB18A" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 19" data-slug="trabajo19" href="/Trabajo/19-cotrina.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#1F5CA9" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 20" data-slug="trabajo20" href="/Trabajo/trabajo20.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#ff4820" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 21" data-slug="trabajo21" href="/Trabajo/trabajo21.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:hsla(76.20689655172414, 66.45%, 52.31%, 1.00)" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 22" data-slug="trabajo22" href="/Trabajo/trabajo22.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#171412" role="listitem" class="w-dyn-item">
+                                            <a data-title="trabajo 23" data-slug="trabajo23" href="/Trabajo/trabajo23.html" class="w-inline-block"></a>
+                                        </div>
+                                        <div style="background-color:#e0e1e4" role="listitem" class="w-dyn-item">
+                                            <a data-title="Ermodent" data-slug="ermodent" href="/Trabajo/1-ermodent.html" class="w-inline-block"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </c-project-next>
+                        </div>
+                    </main>
+                </c-transition>
+            </c-scroll>
+        </c-app>
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67f67951d8f019dd5e6578a7" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.prod.website-files.com/67f67951d8f019dd5e6578a7/js/webflow.e291d130.c9d43230c9f9b311.js" type="text/javascript"></script>
+        <script>
+            (function() {
+                /*const LOCALHOST_URL = [
+      'http://localhost:3000/@vite/client',
+      'http://localhost:3000/src/main.js',
+    ]
+    const PROD_URL = ['https://webflow-brand-appart.netlify.app/main.js']
+
+    function createScripts(arr, isDevMode) {
+      return arr.map(function (url) {
+        const s = document.createElement('script')
+        s.src = url
+
+        if (isDevMode) {
+          s.type = 'module'
+        }
+
+        return s
+      })
+    }
+
+    function insertScript(scriptArr) {
+      scriptArr.forEach(function (script) {
+        document.body.appendChild(script)
+      })
+    }
+
+    const localhostScripts = createScripts(LOCALHOST_URL, true)
+    const prodScripts = createScripts(PROD_URL, false)
+
+    let choosedScripts = null
+
+    fetch(LOCALHOST_URL[0], {})
+      .then(() => {
+        choosedScripts = localhostScripts
+      })
+      .catch((e) => {
+        choosedScripts = prodScripts
+        console.error(e)
+      })
+      .finally(() => {
+        if (choosedScripts) {
+          insertScript(choosedScripts)
+
+          return
+        }
+
+        console.error('something went wrong, no scripts loaded')
+      })*/
+
+                const PROD_URL = ['https://webflow-brand-appart.netlify.app/main.js']
+
+                function createScripts(arr, isDevMode) {
+                    return arr.map(function(url) {
+                        const s = document.createElement('script')
+                        s.src = url
+
+                        if (isDevMode) {
+                            s.type = 'module'
+                        }
+
+                        return s
+                    })
+                }
+
+                function insertScript(scriptArr) {
+                    scriptArr.forEach(function(script) {
+                        document.body.appendChild(script)
+                    })
+                }
+
+                const prodScripts = createScripts(PROD_URL, false)
+                insertScript(prodScripts)
+
+            }
+            )()
+        </script>
+        <!-- <div id="awwwards" style="position: fixed; z-index: 999; transform: translateY(-50%); top: 50%;  right: 0"><a href="https://www.awwwards.com/sites/brand-appart" target="_blank"><svg width="53.08" height="171.358"><path class="js-color-bg" fill="black" d="M0 0h53.08v171.358H0z"></path><g class="js-color-text" fill="white"><path d="M20.048 153.585v-2.002l6.752-3.757h-6.752v-1.9h10.23v2.002l-6.752 3.757h6.752v1.9zM29.899 142.382a3.317 3.317 0 0 1-1.359 1.293c-.575.297-1.223.446-1.944.446-.721 0-1.369-.149-1.944-.446a3.317 3.317 0 0 1-1.359-1.293c-.331-.564-.497-1.232-.497-2.003 0-.769.166-1.437.497-2.002a3.332 3.332 0 0 1 1.359-1.294c.575-.297 1.224-.445 1.944-.445.722 0 1.369.148 1.944.445a3.326 3.326 0 0 1 1.359 1.294c.33.565.496 1.233.496 2.002.001.77-.166 1.438-.496 2.003m-1.703-3.348c-.435-.331-.967-.497-1.601-.497s-1.167.166-1.601.497c-.434.332-.65.78-.65 1.345s.217 1.014.65 1.346c.434.33.967.496 1.601.496s1.166-.166 1.601-.496c.434-.332.649-.78.649-1.346.001-.565-.215-1.013-.649-1.345M22.912 134.996v-1.812h1.185c-.43-.283-.752-.593-.973-.929-.219-.336-.329-.732-.329-1.19 0-.479.127-.902.38-1.272.254-.37.635-.633 1.141-.79-.478-.262-.851-.591-1.118-.985a2.221 2.221 0 0 1-.402-1.265c0-.682.2-1.218.599-1.607.4-.391.957-.585 1.668-.585h5.218v1.812H25.37c-.682 0-1.023.303-1.023.907 0 .467.264.85.789 1.146.527.299 1.286.446 2.28.446h2.865v1.813H25.37c-.682 0-1.023.303-1.023.906 0 .468.275.851.826 1.147.551.298 1.352.446 2.404.446h2.704v1.812h-7.369zM21.626 122.457c-.225.224-.502.336-.833.336s-.608-.112-.833-.336a1.128 1.128 0 0 1-.336-.833c0-.331.111-.609.336-.833.225-.225.502-.336.833-.336s.608.111.833.336c.225.224.337.502.337.833 0 .332-.112.608-.337.833m1.286-1.739h7.366v1.813h-7.366v-1.813zM22.912 118.668v-1.812h1.185a3.348 3.348 0 0 1-.951-1.009 2.434 2.434 0 0 1-.351-1.272c0-.681.19-1.229.57-1.644.38-.414.931-.621 1.651-.621h5.263v1.812h-4.722c-.418 0-.727.096-.92.285-.195.19-.293.447-.293.769 0 .302.116.58.351.833.233.254.577.458 1.03.613.453.156.992.234 1.615.234h2.938v1.812h-7.366zM29.833 109.129a3.33 3.33 0 0 1-1.432 1.169 4.535 4.535 0 0 1-1.805.373 4.537 4.537 0 0 1-1.807-.373c-.579-.248-1.057-.638-1.432-1.169s-.563-1.196-.563-1.995c0-.771.183-1.413.549-1.93a3.28 3.28 0 0 1 1.382-1.141 4.221 4.221 0 0 1 1.709-.364h.746v5.071c.447-.02.838-.183 1.168-.49.332-.307.498-.724.498-1.248 0-.41-.093-.754-.277-1.031-.186-.278-.473-.529-.863-.753l.542-1.462c.69.303 1.224.724 1.592 1.265.371.541.556 1.235.556 2.083 0 .799-.188 1.464-.563 1.995m-4.085-3.574c-.41.088-.746.261-1.009.52-.262.258-.395.61-.395 1.06 0 .428.137.784.409 1.067.272.282.604.458.994.525v-3.172zM29.833 100.878c-.375.531-.852.921-1.432 1.169a4.552 4.552 0 0 1-3.612 0c-.579-.248-1.057-.638-1.432-1.169s-.563-1.196-.563-1.995c0-.77.183-1.412.549-1.93a3.278 3.278 0 0 1 1.382-1.14 4.222 4.222 0 0 1 1.709-.365h.746v5.072a1.794 1.794 0 0 0 1.168-.49c.332-.307.498-.724.498-1.249 0-.41-.093-.753-.277-1.031-.186-.277-.473-.528-.863-.753l.542-1.462c.69.302 1.224.724 1.592 1.265.371.541.556 1.234.556 2.083 0 .799-.188 1.464-.563 1.995m-4.085-3.573c-.41.088-.746.261-1.009.519-.262.258-.395.611-.395 1.06 0 .429.137.784.409 1.067.272.282.604.458.994.526v-3.172zM35.481 16.926l-4.782 14.969h-3.266l-2.584-9.682-2.584 9.682h-3.268l-4.781-14.969h3.713l2.673 10.276 2.524-10.276h3.445l2.524 10.276 2.674-10.276zM37.979 27.083c1.426 0 2.495 1.068 2.495 2.495 0 1.425-1.069 2.495-2.495 2.495-1.425 0-2.495-1.07-2.495-2.495-.001-1.427 1.07-2.495 2.495-2.495"></path></g></svg></a></div> -->
+    </body>
+</html>
